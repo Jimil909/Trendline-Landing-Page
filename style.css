@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+ 
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    background-color: #eee;
+}
+
+nav{
+    height: 70px;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+
+#nav-part1 i{
+    font-size: 40px;
+}
+
+#nav-part2{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+#nav-part2 span{
+    color: #999;
+    margin-left: 10px;
+}
+
+#nav-part2 h4{
+    font-size: 12px;
+    font-weight: 400;
+    color: #333;
+}
+
+#nav-part2 i{
+    display: none;
+}
+
+#nav2{
+    height: 30px;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+    gap: 50px;
+}
+
+#nav2 h4{
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+}
+
+#content{
+    width: 100%;
+    height: calc(100% - 100px);
+    /* background-color: aquamarine; */
+}
+
+#text-content{
+    height: 40%;
+    width: 100%;
+    /* background-color: burlywood; */
+    display: flex;
+    /* flex-wrap: nowrap; */
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+#text-content::-webkit-scrollbar{
+    background-color: transparent;
+    height: 4px;
+}
+
+#text-content::-webkit-scrollbar-thumb{
+    background-color: orangered;
+}
+
+.elem{
+    flex-shrink: 0;
+    height: 100%;
+    width: 70%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.elem h1{
+    font-size: 7.5vw;
+    font-weight: 300;
+}
+
+#image-content{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+#image-content::-webkit-scrollbar{
+    display: none;
+}
+
+#image-content img{
+    flex-shrink: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 600px){
+    nav{
+        height: 40px;
+        /* background-color: red; */
+        padding: 0 20px;
+    }
+    
+    #nav-part1 i{
+        font-size: 30px;
+    }
+    
+    #nav-part2{
+        gap: 20px;
+    }
+    
+    #nav-part2 h4{
+        display: none;
+    }
+
+    #nav-part2 i{
+        display: initial;
+        font-size: 20px;
+    }
+
+    #nav-part2 #language{
+        display: initial;
+        font-size: 15px;
+    }
+    
+    #nav2{
+        padding: 0 5px;
+        gap: 6px;
+    }
+    
+    #nav2 h4{
+        font-size: 3.2vw;
+    }
+    
+    #content{
+        width: 100%;
+        height: calc(100% - 70px);
+        /* background-color: aquamarine; */
+    }
+
+    #text-content{
+        height: 40%;
+        width: 100%;
+        /* background-color: burlywood; */
+        display: flex;
+        /* flex-wrap: nowrap; */
+        overflow-x: auto;
+        scroll-behavior: smooth;
+    }
+
+    .elem{
+        flex-shrink: 0;
+        height: 100%;
+        width: fit-content;
+        /* background-color: red; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 20px;
+    }
+
+    .elem h1{
+        font-size: 18vw;
+    }
+}
